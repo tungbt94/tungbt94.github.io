@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lazy loading vue component | tungbt94 blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="./avatar.jpg">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./avatar.jpg">
+    <link rel="mask-icon" href="./avatar.jpg" color="#3eaf7c">
+    <script src="https://unpkg.com/thesemetrics@latest" async=""></script>
+    <meta name="description" content="Everything I want to share">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="./avatar.jpg">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.3f8b374e.css" as="style"><link rel="preload" href="/assets/js/app.a8e170ae.js" as="script"><link rel="preload" href="/assets/js/2.bc34ef98.js" as="script"><link rel="preload" href="/assets/js/23.f68f366b.js" as="script"><link rel="prefetch" href="/assets/js/10.be699be0.js"><link rel="prefetch" href="/assets/js/11.b085ea5a.js"><link rel="prefetch" href="/assets/js/12.1e386f11.js"><link rel="prefetch" href="/assets/js/13.ba03e15b.js"><link rel="prefetch" href="/assets/js/14.3c123975.js"><link rel="prefetch" href="/assets/js/15.be4c254c.js"><link rel="prefetch" href="/assets/js/16.bbffb854.js"><link rel="prefetch" href="/assets/js/17.f9de1fb5.js"><link rel="prefetch" href="/assets/js/18.8bf69e79.js"><link rel="prefetch" href="/assets/js/19.f42f380c.js"><link rel="prefetch" href="/assets/js/20.8c235b70.js"><link rel="prefetch" href="/assets/js/21.904198ae.js"><link rel="prefetch" href="/assets/js/22.df67dd70.js"><link rel="prefetch" href="/assets/js/24.4fbbebae.js"><link rel="prefetch" href="/assets/js/25.51952017.js"><link rel="prefetch" href="/assets/js/26.77e95f4e.js"><link rel="prefetch" href="/assets/js/27.26cb0d93.js"><link rel="prefetch" href="/assets/js/28.6be8ed61.js"><link rel="prefetch" href="/assets/js/29.601c87d7.js"><link rel="prefetch" href="/assets/js/3.467808b2.js"><link rel="prefetch" href="/assets/js/30.6f40430b.js"><link rel="prefetch" href="/assets/js/31.49db2149.js"><link rel="prefetch" href="/assets/js/32.2538db37.js"><link rel="prefetch" href="/assets/js/33.d52020ff.js"><link rel="prefetch" href="/assets/js/34.af5cc55b.js"><link rel="prefetch" href="/assets/js/35.77387fbc.js"><link rel="prefetch" href="/assets/js/36.a48e104d.js"><link rel="prefetch" href="/assets/js/4.730d046a.js"><link rel="prefetch" href="/assets/js/5.0f0f5a88.js"><link rel="prefetch" href="/assets/js/6.428981d4.js"><link rel="prefetch" href="/assets/js/7.1f900eff.js"><link rel="prefetch" href="/assets/js/8.df5aea3a.js"><link rel="prefetch" href="/assets/js/9.978bc59f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3f8b374e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">tungbt94 blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Trang chủ
+</a></div><div class="nav-item"><a href="/post/" class="nav-link router-link-active">
+  Các bài viết
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  Về tôi
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Trang chủ
+</a></div><div class="nav-item"><a href="/post/" class="nav-link router-link-active">
+  Các bài viết
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  Về tôi
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Các bài viết</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/post/optimize-image-in-reply-block.html" class="sidebar-link">Tối ưu ảnh cho website ReplyBlock</a></li><li><a href="/post/type-in-js.html" class="sidebar-link">Một số note về type trong js</a></li><li><a href="/post/optimize-image-2.html" class="sidebar-link">Tối ưu ảnh phần 2: Webp</a></li><li><a href="/post/optimize-image-3.html" class="sidebar-link">Tối ưu ảnh phần 3: Tool</a></li><li><a href="/post/lazy-img-in-vue-with-lozad.html" class="sidebar-link">Lazy loading image trong vue với lozad</a></li><li><a href="/post/sync-value-vue-component.html" class="sidebar-link">Vue tip: sync data with child component</a></li><li><a href="/post/lazy-load-component-vue.html" aria-current="page" class="active sidebar-link">Lazy loading vue component</a></li><li><a href="/post/how-to-keep-reading.html" class="sidebar-link">Làm thế nào để giữ thói quen đọc?</a></li><li><a href="/post/vsf-custom-theme.html" class="sidebar-link">Custom Vue Storefront theme</a></li><li><a href="/post/benefit-of-offline.html" class="sidebar-link">Benefit of offline</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>til</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Về tôi</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/about/" class="sidebar-link">About me</a></li><li><a href="/about/chuyen-hackathon.html" class="sidebar-link">Chuyện đi thi hackathon</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="lazy-loading-vue-component"><a href="#lazy-loading-vue-component" class="header-anchor">#</a> Lazy loading vue component</h1> <p>Trong <a href="https://tungbt94.github.io/post/lazy-img-in-vue-with-lozad.html" target="_blank" rel="noopener noreferrer">bài viết trước<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> mình có đề cập đến lazy load cho image. Bài viết này chúng ta tiếp tục với lazy load cho component nhé.</p> <p>Về cơ bản chúng ta vẫn sử dụng <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" target="_blank" rel="noopener noreferrer">IntersectionObserver API<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> để xác định khi nào đến element nằm trong viewport. Và cộng thêm việc vuejs cung cấp <a href="https://vuejs.org/v2/guide/components-dynamic-async.html#Async-Components" target="_blank" rel="noopener noreferrer">async component<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> nên ta hoàn toàn có thể kết hợp lại để lazy component.</p> <p>Ý tưởng là ta sẽ handle loading state: https://vuejs.org/v2/guide/components-dynamic-async.html#Handling-Loading-State</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">AsyncComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// The component to load (should be a Promise)</span>
+  component<span class="token operator">:</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./MyComponent.vue'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token comment">// A component to use while the async component is loading</span>
+  loading<span class="token operator">:</span> LoadingComponent<span class="token punctuation">,</span>
+  <span class="token comment">// A component to use if the load fails</span>
+  error<span class="token operator">:</span> ErrorComponent<span class="token punctuation">,</span>
+  <span class="token comment">// Delay before showing the loading component. Default: 200ms.</span>
+  delay<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+  <span class="token comment">// The error component will be displayed if a timeout is</span>
+  <span class="token comment">// provided and exceeded. Default: Infinity.</span>
+  timeout<span class="token operator">:</span> <span class="token number">3000</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>component: chúng ta sẽ cần return component cuối cùng(component muốn load) trong Promise để nó render ra cuối cùng</p> <p>loading: chúng ta sẽ return một component với <code>render</code> và <code>mounted</code> để render ra 1 component hiển thị tạm thời trong lúc component chính chưa load xong và observer xem khi nào <code>this.$el</code> nằm trong view port để load ra component muốn load</p> <p>Ngoài ra bạn có thể viết thêm tuỳ ý 😄</p> <p>Thôi không dài dòng nữa. Dưới đây là một ví dụ:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">lazyLoadComponent</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>
+  componentFactory<span class="token punctuation">,</span>
+  loading<span class="token punctuation">,</span>
+  loadingData<span class="token punctuation">,</span>
+<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> resolveComponent<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    component<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      resolveComponent <span class="token operator">=</span> resolve<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    loading<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span><span class="token string">'IntersectionObserver'</span> <span class="token keyword">in</span> window<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token function">componentFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>resolveComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">const</span> observer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">IntersectionObserver</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">entries</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>entries<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>intersectionRatio <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+          observer<span class="token punctuation">.</span><span class="token function">unobserve</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$el<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token function">componentFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>resolveComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        observer<span class="token punctuation">.</span><span class="token function">observe</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$el<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">createElement</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">createElement</span><span class="token punctuation">(</span>loading<span class="token punctuation">,</span> loadingData<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Và khi cần khai báo component:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    HelloWorld<span class="token operator">:</span> <span class="token function">lazyLoadComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      loading<span class="token operator">:</span> SkeletonBox<span class="token punctuation">,</span>
+      loadingData<span class="token operator">:</span> <span class="token punctuation">{</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          width<span class="token operator">:</span> <span class="token string">'100%'</span><span class="token punctuation">,</span>
+          height<span class="token operator">:</span> <span class="token string">'20em'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">componentFactory</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'@/components/HelloWorld.vue'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>SkeletonBox là một component để hiển thị tạm thời trong lúc component chính chưa load xong:</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span>
+    <span class="token attr-name">:style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ height, width: computedWidth }<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>SkeletonBox<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'SkeletonBox'</span><span class="token punctuation">,</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    maxWidth<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Number<span class="token punctuation">,</span>
+      required<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token number">100</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    minWidth<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Number<span class="token punctuation">,</span>
+      required<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token number">80</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    height<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+      required<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'1em'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    width<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+      required<span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">computedWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> randomWidth <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>maxWidth <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>minWidth<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>minWidth<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">||</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>randomWidth<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">%</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token selector">.SkeletonBox</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #DDDBDD<span class="token selector">;
+  &amp;::after</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-100%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>
+      90deg<span class="token punctuation">,</span>
+      <span class="token function">rgba</span><span class="token punctuation">(</span>#fff<span class="token punctuation">,</span> 0<span class="token punctuation">)</span> 0<span class="token punctuation">,</span>
+      <span class="token function">rgba</span><span class="token punctuation">(</span>#fff<span class="token punctuation">,</span> 0.2<span class="token punctuation">)</span> 20%<span class="token punctuation">,</span>
+      <span class="token function">rgba</span><span class="token punctuation">(</span>#fff<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span> 60%<span class="token punctuation">,</span>
+      <span class="token function">rgba</span><span class="token punctuation">(</span>#fff<span class="token punctuation">,</span> 0<span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">animation</span><span class="token punctuation">:</span> shimmer 5s infinite<span class="token punctuation">;</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token atrule"><span class="token rule">@keyframes</span> shimmer</span> <span class="token punctuation">{</span>
+    <span class="token selector">100%</span> <span class="token punctuation">{</span>
+      <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>100%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>Ngoài ra để cho đơn giản thì chúng ta có thể dùng <a href="https://github.com/maoberlehner/vue-lazy-hydration" target="_blank" rel="noopener noreferrer">vue-lazy-hydration<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> cho nhanh gọn 😄 Tuy nhiên cũng nên hiểu để nếu cần custom còn biết cách 😄</p> <p>Bài viết tham khảo từ: https://markus.oberlehner.net/blog/lazy-load-vue-components-when-they-become-visible/</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/post/sync-value-vue-component.html" class="prev">
+        Vue tip: sync data with child component
+      </a></span> <span class="next"><a href="/post/how-to-keep-reading.html">
+        Làm thế nào để giữ thói quen đọc?
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a8e170ae.js" defer></script><script src="/assets/js/2.bc34ef98.js" defer></script><script src="/assets/js/23.f68f366b.js" defer></script>
+  </body>
+</html>

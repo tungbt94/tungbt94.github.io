@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tmux trick | tungbt94 blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="./avatar.jpg">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./avatar.jpg">
+    <link rel="mask-icon" href="./avatar.jpg" color="#3eaf7c">
+    <script src="https://unpkg.com/thesemetrics@latest" async=""></script>
+    <meta name="description" content="Everything I want to share">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="./avatar.jpg">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.3f8b374e.css" as="style"><link rel="preload" href="/assets/js/app.a8e170ae.js" as="script"><link rel="preload" href="/assets/js/2.bc34ef98.js" as="script"><link rel="preload" href="/assets/js/34.af5cc55b.js" as="script"><link rel="prefetch" href="/assets/js/10.be699be0.js"><link rel="prefetch" href="/assets/js/11.b085ea5a.js"><link rel="prefetch" href="/assets/js/12.1e386f11.js"><link rel="prefetch" href="/assets/js/13.ba03e15b.js"><link rel="prefetch" href="/assets/js/14.3c123975.js"><link rel="prefetch" href="/assets/js/15.be4c254c.js"><link rel="prefetch" href="/assets/js/16.bbffb854.js"><link rel="prefetch" href="/assets/js/17.f9de1fb5.js"><link rel="prefetch" href="/assets/js/18.8bf69e79.js"><link rel="prefetch" href="/assets/js/19.f42f380c.js"><link rel="prefetch" href="/assets/js/20.8c235b70.js"><link rel="prefetch" href="/assets/js/21.904198ae.js"><link rel="prefetch" href="/assets/js/22.df67dd70.js"><link rel="prefetch" href="/assets/js/23.f68f366b.js"><link rel="prefetch" href="/assets/js/24.4fbbebae.js"><link rel="prefetch" href="/assets/js/25.51952017.js"><link rel="prefetch" href="/assets/js/26.77e95f4e.js"><link rel="prefetch" href="/assets/js/27.26cb0d93.js"><link rel="prefetch" href="/assets/js/28.6be8ed61.js"><link rel="prefetch" href="/assets/js/29.601c87d7.js"><link rel="prefetch" href="/assets/js/3.467808b2.js"><link rel="prefetch" href="/assets/js/30.6f40430b.js"><link rel="prefetch" href="/assets/js/31.49db2149.js"><link rel="prefetch" href="/assets/js/32.2538db37.js"><link rel="prefetch" href="/assets/js/33.d52020ff.js"><link rel="prefetch" href="/assets/js/35.77387fbc.js"><link rel="prefetch" href="/assets/js/36.a48e104d.js"><link rel="prefetch" href="/assets/js/4.730d046a.js"><link rel="prefetch" href="/assets/js/5.0f0f5a88.js"><link rel="prefetch" href="/assets/js/6.428981d4.js"><link rel="prefetch" href="/assets/js/7.1f900eff.js"><link rel="prefetch" href="/assets/js/8.df5aea3a.js"><link rel="prefetch" href="/assets/js/9.978bc59f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3f8b374e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">tungbt94 blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Trang chủ
+</a></div><div class="nav-item"><a href="/post/" class="nav-link">
+  Các bài viết
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  Về tôi
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Trang chủ
+</a></div><div class="nav-item"><a href="/post/" class="nav-link">
+  Các bài viết
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  Về tôi
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Các bài viết</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>til</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/til/remove-duplicate-array-js.html" class="sidebar-link">Cách xoá phần tử lặp trong js</a></li><li><a href="/til/import-file-to-colab.html" class="sidebar-link">Cách import file vào Google colab</a></li><li><a href="/til/array-as-function-argument.html" class="sidebar-link">Cách truyền mảng vào function</a></li><li><a href="/til/web-dev.html" class="sidebar-link">Một trang mọi frontend developer nên biết</a></li><li><a href="/til/check-valid-date.html" class="sidebar-link">Cách check valid date từ day, month, year</a></li><li><a href="/til/working-with-non-default-ssh-key-pair-paths.html" class="sidebar-link">Working with non-default SSH key pair paths</a></li><li><a href="/til/nuxt-router-error.html" class="sidebar-link">Cách xử lý lỗi khi chạy yarn dev bị lỗi nuxt.router</a></li><li><a href="/til/count-all-the-times-things-appear-in-a-list.html" class="sidebar-link">Cách đếm số lần xuất hiện của phần tử trong mảng js</a></li><li><a href="/til/tmux-trick.html" aria-current="page" class="active sidebar-link">Tmux trick</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/til/tmux-trick.html#open-new-window-or-split-pane-with-the-same-directory" class="sidebar-link">Open new window or split pane with the same directory</a></li><li class="sidebar-sub-header"><a href="/til/tmux-trick.html#use-tmuxp" class="sidebar-link">Use tmuxp</a></li><li class="sidebar-sub-header"><a href="/til/tmux-trick.html#use-tmux-mem-cpu-load" class="sidebar-link">Use tmux-mem-cpu-load</a></li></ul></li><li><a href="/til/alias.html" class="sidebar-link">Alias</a></li><li><a href="/til/switch-env.html" class="sidebar-link">Switch env</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Về tôi</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/about/" class="sidebar-link">About me</a></li><li><a href="/about/chuyen-hackathon.html" class="sidebar-link">Chuyện đi thi hackathon</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="tmux-trick"><a href="#tmux-trick" class="header-anchor">#</a> Tmux trick</h1> <p><a href="https://gist.github.com/MohamedAlaa/2961058" target="_blank" rel="noopener noreferrer">cheatsheet<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="open-new-window-or-split-pane-with-the-same-directory"><a href="#open-new-window-or-split-pane-with-the-same-directory" class="header-anchor">#</a> Open new window or split pane with the same directory</h2> <div class="language- extra-class"><pre class="language-text"><code>bind c new-window      -c &quot;#{pane_current_path}&quot;
+bind | split-window -h -c &quot;#{pane_current_path}&quot;
+bind - split-window -v -c &quot;#{pane_current_path}&quot;
+</code></pre></div><h2 id="use-tmuxp"><a href="#use-tmuxp" class="header-anchor">#</a> Use tmuxp</h2> <p>Use <code>tmuxp</code> to freeze and load a session with config file(json or yaml).</p> <h3 id="install"><a href="#install" class="header-anchor">#</a> Install</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>pip <span class="token function">install</span> --user tmuxp
+</code></pre></div><h3 id="load"><a href="#load" class="header-anchor">#</a> Load</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>tmuxp load ./mysession.yaml
+<span class="token comment"># or</span>
+tmuxp load my-session
+</code></pre></div><p>If load from <code>.tmuxp.yaml</code> or <code>.tmuxp.json</code> in project</p> <div class="language-bash extra-class"><pre class="language-bash"><code>tmuxp load path/to/my/project/
+</code></pre></div><p>Load multiple session</p> <div class="language-bash extra-class"><pre class="language-bash"><code>tmuxp load session1 session2
+</code></pre></div><h3 id="freeze-a-session-to-a-config"><a href="#freeze-a-session-to-a-config" class="header-anchor">#</a> Freeze a session to a config</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>tmuxp freeze session-name
+</code></pre></div><h2 id="use-tmux-mem-cpu-load"><a href="#use-tmux-mem-cpu-load" class="header-anchor">#</a> Use tmux-mem-cpu-load</h2> <h3 id="install-2"><a href="#install-2" class="header-anchor">#</a> Install</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> clone https://github.com/thewtex/tmux-mem-cpu-load.git
+<span class="token builtin class-name">cd</span> tmux-mem-cpu-load
+cmake <span class="token builtin class-name">.</span>
+<span class="token function">make</span>
+<span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span>
+</code></pre></div><h3 id="add-config"><a href="#add-config" class="header-anchor">#</a> Add config</h3> <div class="language- extra-class"><pre class="language-text"><code>set -g status-interval 2
+set -g status-right-length 60
+set -g status-right &quot;#[fg=black,bg=green]#(tmux-mem-cpu-load -m 0 -a 0 -g 0 )&quot;
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/til/count-all-the-times-things-appear-in-a-list.html" class="prev">
+        Cách đếm số lần xuất hiện của phần tử trong mảng js
+      </a></span> <span class="next"><a href="/til/alias.html">
+        Alias
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a8e170ae.js" defer></script><script src="/assets/js/2.bc34ef98.js" defer></script><script src="/assets/js/34.af5cc55b.js" defer></script>
+  </body>
+</html>
